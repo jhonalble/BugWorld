@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Game</title>
+    <link rel="stylesheet" type="text/css" href="../css/mainPage.css" />
+
+  </head>
+  <body> <!-- when the page is loaded trigger function pageLoad -->
+    <div id="main-div" class="box">
+      <div class="displayRow">
+        <canvas id="canvas" class="display-game" width="100" height="100"></canvas>
+<!--        <pre id="mapfile-contents" class="display-game"></pre>-->
+        <div class="display-info">
+          <button onclick="showOptions()">Options</button><br />
+          <button onclick="showEnding()">Quit</button><br />
+
+          <label for="iterationNum">Iterations: </label>
+          <pre id="iterationNum"></pre>
+          <br />
+
+          <label for="availableFood">Amount of undetected food: </label>
+          <pre id="availableFood"></pre>
+          <br />
+
+          <label for="rbugsRemaining"> Red Bugs Remaining: </label>
+          <pre id="rbugsRemaining"></pre>
+          <br />
+
+          <label for="rbugsKilled"> Red Bugs Killed: </label>
+          <pre id="rbugsKilled"></pre>
+          <br />
+
+          <label for="rbugsFood"> Food Brought Home By The Red Bugs: </label>
+          <pre id="rbugsFood"></pre>
+          <br />
+
+          <label for="bbugsRemaining"> Black Bugs Remaining: </label>
+          <pre id="bbugsRemaining"></pre>
+          <br />
+
+          <label for="bbugsKilled"> Black Bugs Killed: </label>
+          <pre id="bbugsKilled"></pre>
+          <br />
+
+          <label for="bugsFood"> Food Brought Home By The Black Bugs: </label>
+          <pre id="bugsFood"></pre>
+          <br />
+        </div>
+      </div>
+      <div id="logs-div" class="logs">
+        <label for="logs"> Logs will be here </label>
+        <pre id="logs"></pre>
+        <br />
+      </div>
+    </div>
+
+    <script src="../js/Sprite.js"></script>
+    <script src="../js/classes/Bug.js"></script>
+    <script src="../js/classes/BugBrain.js"></script>
+    <script src="../js/classes/BugCondition.js"></script>
+    <script src="../js/classes/Color.js"></script>
+    <script src="../js/classes/Direction.js"></script>
+    <script src="../js/classes/Marker.js"></script>
+    <script src="../js/classes/Position.js"></script>
+    <script src="../js/classes/Turn.js"></script>
+    <script src="../js/classes/World.js"></script>
+    <script src="../js/classes/WorldCell.js"></script>
+    <script src="../js/instructions.js"></script>
+    <script src="../js/assembler.js"></script>
+    <script src="../js/utils.js"></script>
+
+  <script src="../js/mainPage.js"></script>
+    <script>display()</script>
+  </body>
+</html>

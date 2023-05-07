@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>File Upload Page</title>
+  <link rel="stylesheet" type="text/css" href="../css/uploadPage.css" />
+  <link rel="stylesheet" type="text/css" href="../css/app.css" />
+</head>
+
+<body>
+  <section class="header">
+    <headtext>Upload files to create your own</headtext>
+    <a href="uploadPage.html">
+    </a>
+  </section>
+  <section class="formsection">
+    <div class="mainDiv">
+
+      <form method="post" enctype="multipart/form-data" action="./mainPage.html">
+
+        <label for="mapfile">Choose Map File : <i class="fa fa-fw fa-upload"></i>
+        </label>
+        <input type="file" class="form-control" id="mapfile" name="mapfile" multiple><br />
+
+        <label for="rbfile">Choose Red Bug File : <i class="fa fa-fw fa-upload"></i>
+        </label>
+        <input type="file" class="form-control" id="rbfile" name="rbfile" multiple><br />
+
+        <label for="bbfile">Choose Black Bug File : <i class="fa fa-fw fa-upload"></i>
+        </label>
+        <input type="file" class="form-control" id="bbfile" name="bbfile" multiple><br />
+
+        <label for="iterations">Number of Iterations: </label>
+        <input
+          type="number"
+          name="iterations"
+          id="iterations"
+          min="1"
+          step="1"
+        /><br />
+
+        <label for="log">Do you want to log the results of the session?</label>
+        <input type="checkbox" name="log" id="log" /><br />
+
+        <input type="submit" value="Upload" onclick="submitForm()" />
+      </form>
+    </div>
+  </section>
+  <script>
+
+  </script>
+  <script src="../js/Sprite.js"></script>
+  <script src="../js/classes/Bug.js"></script>
+  <script src="../js/classes/BugBrain.js"></script>
+  <script src="../js/classes/BugCondition.js"></script>
+  <script src="../js/classes/Color.js"></script>
+  <script src="../js/classes/Direction.js"></script>
+  <script src="../js/classes/Marker.js"></script>
+  <script src="../js/classes/Position.js"></script>
+  <script src="../js/classes/Turn.js"></script>
+  <script src="../js/classes/World.js"></script>
+  <script src="../js/classes/WorldCell.js"></script>
+  <script src="../js/instructions.js"></script>
+  <script src="../js/assembler.js"></script>
+  <script src="../js/uploadPage.js"></script>
+</body>
+
+</html>
