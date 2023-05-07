@@ -1,19 +1,16 @@
 {
-"homepage": "https://jhonalble.github.io/Bug-World",
-
-  "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "jest": "^29.5.0"
-  },
+  "name": "naya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bug.test.js",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "bug.test": "jest"
   },
-  "dependencies": {
-    "react-scripts": "^5.0.1"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
   }
 }
